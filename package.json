@@ -2,7 +2,7 @@
   "name": "projectmapiwrapper",
   "version": "1.0.0",
   "description": "Wrapper for flyff project M api. Wrappers main focus is simplicity and easy to use",
-  "main": "index.js",
+  "main": "Project_M_API/ProjectMApi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
