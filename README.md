@@ -29,6 +29,9 @@ projectMApi.getAllClassIds().then(console.log);
 
 ```javascript
 projectMApi.getClassById(764).then(console.log);
+
+// Or, use multiple ids to get multiple values in response, seperated by comma
+projectMApi.getClassById(764, 9686).then(console.log);
 ```
 </p>
 </details>
