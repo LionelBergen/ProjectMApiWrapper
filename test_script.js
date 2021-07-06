@@ -29,6 +29,11 @@ async function foo()
   console.log('got list of classes from a string, with spaces:');
   console.log(listOfClasses);
   
+  await wait(2);
+  listOfClasses = await projectMApi.getClassesByIds('764, 2246, 9686');
+  console.log('getClassesByIds:');
+  console.log(listOfClasses);
+  
   
 }
 

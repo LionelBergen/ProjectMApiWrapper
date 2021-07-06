@@ -18,7 +18,7 @@ class ProjectM
     return HTTPSCall(PROJECT_M_API_URL + "/class/" + id);
   }
   
-  getClassByIds(ids)
+  getClassesByIds(ids)
   {
     return getClassById(ids);
   }
