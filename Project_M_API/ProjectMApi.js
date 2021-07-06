@@ -6,3 +6,5 @@ class ProjectM
   {
   }
 }
+
+module.exports = ProjectM;
