@@ -5,10 +5,11 @@ Very easy to use, simple wrapper for the Project M Flyff API.
 # Usage / Quick Start
 ```
 import ProjectMAPI from './Project_M_API/ProjectMApi.js';
-const projectMApi = new ProjectMAPI();
+// In the future, instantiating the class with an API key may be required!
+// const projectMApi = new ProjectMAPI();
 
 // get all class ID's and log them
-projectMApi.getAllClassIds().then(console.log);
+ProjectMAPI.getAllClassIds().then(console.log);
 ```
 
 # Methods
@@ -18,7 +19,7 @@ projectMApi.getAllClassIds().then(console.log);
 
 ```javascript
 // Returns a list of all ID's. E.G [764, 2246 ...]
-projectMApi.getAllClassIds().then(console.log);
+ProjectMAPI.getAllClassIds().then(console.log);
 ```
 </p>
 </details>
@@ -28,10 +29,10 @@ projectMApi.getAllClassIds().then(console.log);
 <p>
 
 ```javascript
-projectMApi.getClassById(764).then(console.log);
+ProjectMAPI.getClassById(764).then(console.log);
 
 // Or, use multiple ids to get multiple values in response, seperated by comma
-projectMApi.getClassById(764, 9686).then(console.log);
+ProjectMAPI.getClassById(764, 9686).then(console.log);
 ```
 </p>
 </details>
