@@ -1,5 +1,6 @@
 FLYFF Project M API Wrapper
 ---------------------------  
+Very easy to use, simple wrapper for the Project M Flyff API.  
 
 # Usage / Quick Start
 ```
