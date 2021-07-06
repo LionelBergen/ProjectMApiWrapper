@@ -1,8 +1,7 @@
 import https from 'https';
 
-function makeAnHTTPSCall(URL)
-{
-  return new Promise(function(resolve, reject) {
+function makeAnHTTPSCall(URL) {
+  return new Promise((resolve, reject) => {
     https.get(URL, (resp) => {
       let data = '';
 
@@ -13,26 +12,20 @@ function makeAnHTTPSCall(URL)
 
       // The whole response has been received.
       resp.on('end', () => {
-        let parsedData = JSON.parse(data);
+        const parsedData = JSON.parse(data);
 
-        if (parsedData.status)
-        {
-          if (parsedData.status.status_code == '403')
-          {
-            reject('Forbidden. Ensure api key is up to date.');
+        if (parsedData.status) {
+          if (parsedData.status.status_code === '403') {
+            reject(new Error('Forbidden. Ensure api key is up to date.'));
+          } else {
+            reject(new Error(parsedData));
           }
-          else
-          {
-            reject(parsedData);
-          }
-        }
-        else
-        {
+        } else {
           resolve(parsedData);
         }
       });
-    }).on("error", (err) => {
-      reject("Error: " + err.message);
+    }).on('error', (err) => {
+      reject(new Error(`Error: ${err.message}`));
     });
   });
 }
