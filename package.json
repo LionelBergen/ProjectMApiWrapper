@@ -1,0 +1,19 @@
+{
+  "name": "projectmapiwrapper",
+  "version": "1.0.0",
+  "description": "Wrapper for flyff project M api. Wrappers main focus is simplicity and easy to use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flyff",
+    "projectM",
+    "project",
+    "M",
+    "api",
+    "wrapper"
+  ],
+  "author": "Lionel Bergen",
+  "license": "ISC"
+}
