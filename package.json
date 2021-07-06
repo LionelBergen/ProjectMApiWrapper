@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Wrapper for flyff project M api. Wrappers main focus is simplicity and easy to use",
   "main": "Project_M_API/ProjectMApi.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint --ignore-path .gitignore ."

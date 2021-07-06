@@ -1,3 +1,5 @@
+import HTTPSCall from './HttpsCaller.js';
+
 const PROJECT_M_API_URL = "https://flyff-api.sniegu.fr";
 
 class ProjectM
@@ -5,6 +7,11 @@ class ProjectM
   constructor()
   {
   }
+  
+  getAllClassIds()
+  {
+    return HTTPSCall(PROJECT_M_API_URL + "/class");
+  }
 }
 
-module.exports = ProjectM;
+export default ProjectM;
