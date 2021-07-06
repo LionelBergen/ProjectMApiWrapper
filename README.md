@@ -2,6 +2,8 @@ FLYFF Project M API Wrapper
 ---------------------------  
 Very easy to use, simple wrapper for the Project M Flyff API.  
 
+![https://www.npmjs.com/package/leagueapiwrapper](https://nodei.co/npm/projectmapiwrapper.png)
+
 # Usage / Quick Start
 ```
 import ProjectMAPI from './Project_M_API/ProjectMApi.js';
