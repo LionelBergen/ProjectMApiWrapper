@@ -10,9 +10,7 @@ function wait(timeoutInSeconds) {
 
 async function foo() {
   let listOfClasses;
-  let listOfNPCs;
 
-  /*
   const allClassIds = await ProjectMAPI.getAllClassIds();
   console.log('got all class ids:');
   console.log(allClassIds);
@@ -42,13 +40,13 @@ async function foo() {
   listOfClasses = await ProjectMAPI.getClassesByIds('764, 2246, 9686');
   console.log('getClassesByIds:');
   console.log(listOfClasses);
-  */
+
   const allNPCIds = await ProjectMAPI.getAllNpcIds();
   console.log('got all NPC ids:');
   console.log(allNPCIds);
   await wait(2);
 
-  listOfNPCs = await ProjectMAPI.getNPCById('29, 3421');
+  const listOfNPCs = await ProjectMAPI.getNPCById('29, 3421');
   console.log('got list of NPCs from an array:');
   console.log(listOfNPCs);
 }
