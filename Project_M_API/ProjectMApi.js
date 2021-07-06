@@ -12,6 +12,11 @@ class ProjectM
   {
     return HTTPSCall(PROJECT_M_API_URL + "/class");
   }
+  
+  getClassById(id)
+  {
+    return HTTPSCall(PROJECT_M_API_URL + "/class/" + id);
+  }
 }
 
 export default ProjectM;

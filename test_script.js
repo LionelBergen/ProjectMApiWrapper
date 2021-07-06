@@ -3,14 +3,15 @@ const projectMApi = new ProjectMAPI();
 
 async function foo()
 {
-  const x = await projectMApi.getAllClassIds();
+  const allClassIds = await projectMApi.getAllClassIds();
 
   console.log('got all class ids:');
-  console.log(x);
+  console.log(allClassIds);
   
   await wait(2);
   
-  
+  const someClass = await projectMApi.getClassById(allClassIds[0]);
+  console.log(someClass);
   
   
 }
