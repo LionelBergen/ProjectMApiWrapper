@@ -2,6 +2,12 @@ import ProjectMAPI from './Project_M_API/ProjectMApi.js';
 
 // const projectMApi = new ProjectMAPI();
 
+function wait(timeoutInSeconds) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeoutInSeconds * 1000);
+  });
+}
+
 async function foo() {
   let listOfClasses;
 
@@ -15,7 +21,7 @@ async function foo() {
   console.log(someClass);
 
   await wait(2);
-  var arrayOfIds = [allClassIds[0], allClassIds[1]];
+  const arrayOfIds = [allClassIds[0], allClassIds[1]];
   listOfClasses = await ProjectMAPI.getClassById(arrayOfIds);
   console.log('got list of classes from an array:');
   console.log(listOfClasses);
@@ -37,9 +43,3 @@ async function foo() {
 }
 
 foo();
-
-function wait(timeoutInSeconds) {
-  return new Promise(resolve => {
-    setTimeout(resolve, timeoutInSeconds * 1000);
-  });
-}
