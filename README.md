@@ -36,3 +36,25 @@ ProjectMAPI.getClassById(764, 9686).then(console.log);
 ```
 </p>
 </details>
+
+<details><summary>getAllNpcIds</summary>
+<p>
+
+```javascript
+// Returns a list of all ID's. E.G [29, 47, 54 ...]
+ProjectMAPI.getAllNpcIds().then(console.log);
+```
+</p>
+</details>
+
+<details><summary>getNPCById</summary>
+<p>
+
+```javascript
+ProjectMAPI.getNPCById(29).then(console.log);
+
+// Or, use multiple ids to get multiple values in response, seperated by comma
+ProjectMAPI.getNPCById(29, 3421).then(console.log);
+```
+</p>
+</details>
