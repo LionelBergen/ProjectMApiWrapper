@@ -19,5 +19,14 @@
     "wrapper"
   ],
   "author": "Lionel Bergen",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LionelBergen/ProjectMApiWrapper/issues"
+  },
+  "homepage": "https://github.com/LionelBergen/ProjectMApiWrapper#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-strongloop": "^2.1.0"
+  }
 }
