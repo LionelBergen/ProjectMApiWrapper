@@ -41,7 +41,7 @@ async function foo() {
   console.log('getClassesByIds:');
   console.log(listOfClasses);
 
-  const allNPCIds = await ProjectMAPI.getAllNpcIds();
+  const allNPCIds = await ProjectMAPI.getAllNPCIds();
   console.log('got all NPC ids:');
   console.log(allNPCIds);
   await wait(2);

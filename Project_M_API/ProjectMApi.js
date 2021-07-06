@@ -13,7 +13,7 @@ function getClassByIdOrIds(ids) {
   return HTTPSCall(`${CLASS_URL}/${ids}`);
 }
 
-function getNpcByIdOrIds(ids) {
+function getNPCByIdOrIds(ids) {
   return HTTPSCall(`${NPC_URL}/${ids}`);
 }
 
@@ -30,16 +30,16 @@ class ProjectM {
     return getClassByIdOrIds(ids);
   }
 
-  static getAllNpcIds() {
+  static getAllNPCIds() {
     return HTTPSCall(`${NPC_URL}`);
   }
 
   static getNPCById(id) {
-    return getNpcByIdOrIds(id);
+    return getNPCByIdOrIds(id);
   }
 
   static getNPCsByIds(ids) {
-    return getNpcByIdOrIds(ids);
+    return getNPCByIdOrIds(ids);
   }
 }
 
