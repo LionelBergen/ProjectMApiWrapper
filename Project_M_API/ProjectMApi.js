@@ -20,7 +20,7 @@ class ProjectM
   
   getClassesByIds(ids)
   {
-    return getClassById(ids);
+    return this.getClassById(ids);
   }
 }
 

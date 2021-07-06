@@ -3,8 +3,10 @@ const projectMApi = new ProjectMAPI();
 
 async function foo()
 {
+  let listOfClasses;
   const allClassIds = await projectMApi.getAllClassIds();
 
+  /*
   console.log('got all class ids:');
   console.log(allClassIds);
   
@@ -27,7 +29,7 @@ async function foo()
   await wait(2);
   listOfClasses = await projectMApi.getClassById('764, 2246, 9686');
   console.log('got list of classes from a string, with spaces:');
-  console.log(listOfClasses);
+  console.log(listOfClasses);*/
   
   await wait(2);
   listOfClasses = await projectMApi.getClassesByIds('764, 2246, 9686');
