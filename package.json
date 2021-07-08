@@ -1,6 +1,6 @@
 {
   "name": "projectmapiwrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wrapper for flyff project M api. Wrappers main focus is simplicity and easy to use",
   "main": "Project_M_API/ProjectMApi.js",
   "type": "module",

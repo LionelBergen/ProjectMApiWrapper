@@ -6,7 +6,7 @@ Very easy to use, simple wrapper for the Project M Flyff API.
 
 # Usage / Quick Start
 ```
-import ProjectMAPI from './Project_M_API/ProjectMApi.js';
+import ProjectMAPI from 'projectmapiwrapper';
 // In the future, instantiating the class with an API key may be required!
 // const projectMApi = new ProjectMAPI();
 
